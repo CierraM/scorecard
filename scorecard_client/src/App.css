@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora:wght@600&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #d4ebef;
+    --button-hover-color: #43A047;
+    --dark: #282828;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    color: var(--dark);
+}
+
+.main-heading {
+    text-align: center;
+    font-weight: bold;
+    background: var(--secondary-color);
+    margin: 0;
+    padding: 20px 0;
+}
+
+.new-game-section-wrapper {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-content: center;
+    background: var(--secondary-color);
+}
+
+.new-game-section {
+    padding: 20px 60px;
+}
+
+.create-course-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.new-scorecard-section {
+    border-right: 2px solid var(--dark);
+}
+
+.new-scorecard-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-scorecard-form * {
+    margin-bottom: 10px;
+}
+
+
+.button {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: 0;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button.create-course {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: var(--button-hover-color);
+}
+
+
+select {
+    padding: 2px;
+    border: 1px solid var(--dark);
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+.scorecard-list-wrapper {
+    max-width: 650px;
+    margin: auto;
+}
+
+.scorecard-list-wrapper h2 {
+    border-bottom: 2px solid var(--dark);
+}
+
+.card-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.card-list li {
+    padding: 5px 0;
+    background: white;
+}
+
+.card-list li:nth-child(odd) {
+    background: var(--secondary-color);
+}
+
+.card-list li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+.card-list li:hover {
+    filter: brightness(.8)
+}
+
+.new-course-form, .scorecard-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+
+.new-course-form .course-name {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+}
+
+.grid-container input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.grid-container .row {
+    display: flex;
+    max-width:  calc(100vw - 20px);
+}
+
+.row input {
+    flex: 1;
+    border-radius: 0;
+    border-style: none;
+    border: 1px solid var(--dark);
+    min-width: 0;
+}
+
+.non-editable{
+    outline: none;
+}
+
+.grid-container input.row-header {
+    font-weight: bold;
+    min-width: fit-content;
+}
+
+.add-tee button {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    outline: 0;
+    border: 0;
+    color: #FFFFFF;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+
+.add-tee button:hover {
+    cursor: pointer;
+}
+
+.submit-button {
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 20px;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.remove {
+    color: red;
+    border: 1px solid red;
+    background: white;
+    display: block;
+
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.space-below {
+    margin-bottom: 10px;
+}
+
+.out, .in {
+    font-weight: 800;
+    background: lightgrey;
+}
