@@ -36,7 +36,7 @@ $ rails db:migrate
 $ rails server
 ```
 
-#### Frotnend
+#### Frontend
 ```
 $ npm start
 ```
